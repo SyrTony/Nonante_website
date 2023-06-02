@@ -1,0 +1,279 @@
+@font-face {
+  font-family: 'Groove';
+  src: url(MADGROOVE.ttf);
+}
+
+body,
+h1,
+p,
+form,
+input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  background-image: url("../../public/images/background-batiment-blur.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(8px); /* Ajustez la valeur du flou selon vos préférences */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Place l'élément en arrière-plan */
+}
+
+
+
+header {
+  background-color: #ff00cc;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+main {
+  max-width: 75em;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 100px;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.vitrine {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.biere {
+  padding: 20px;
+  background-color: #00ffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  color: #ff00cc;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 10px;
+  background-color: #ff55dd;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #00cccc;
+}
+
+footer {
+  background-color: #ff00cc;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #54b3d6;
+}
+
+li {
+  float: left;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-image: linear-gradient(to right,
+      #F5E372,
+      #F5E372 50%,
+      #fff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 25px 55px 10px 55px;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Groove';
+}
+
+a:before {
+  content: '';
+  background: #F5E372;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  background-position: 0;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+
+
+.logo {
+  height: 75px;
+  padding-right: 25px;
+  padding-left: 30px;
+}
+
+/* Fin CSS du Header */
+
+.text-center {
+  text-align: center;
+}
+
+.paragraphs-container {
+  display: flex;
+  justify-content: center;
+}
+
+.paragraphs-container p {
+  margin: 0 10px;
+}
+
+.centered-paragraph {
+  text-align: center;
+}
+
+/* Vitrines des bières */
+.vitrine {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.vitrine .biere {
+  padding: 20px;
+  background-color: #00ffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vitrine .biere img {
+  max-width: 100%;
+  height: auto;
+}
+
+.vitrine {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.vitrine .biere {
+  flex-basis: calc(25%);
+  margin-bottom: 20px;
+}
+
+.entrée {
+  margin-bottom: 5em;
+}
+
+main,
+h1 {
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+
+
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  resize: vertical;
+  
+}
+
+
+.message {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+}

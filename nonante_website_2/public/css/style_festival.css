@@ -1,0 +1,143 @@
+.titre {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 1%;
+    color: white;
+}
+
+.titre2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
+    text-align: center;
+    padding: 2%;
+    font-size: 30px;
+}
+
+.description-festival {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #F7DA5B;
+    padding: 3%;
+    border-radius: 10px 100px / 120px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.stand {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+    background-color: #8BD0E5;
+}
+
+.titre4 {
+    text-align: center;
+    font-size: 23px;
+    padding: 2%;
+    background-color: #EB64A1;
+    margin-left: 18%;
+    border-radius: 10px 100px / 120px;
+    margin-right: 18%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stand {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 25%;
+    border-radius: 10px 100px / 120px;
+    background-color: #F7DA5B;
+    padding: 20px;
+    margin-right: 25%;
+    margin-bottom: 54px;
+}
+
+.photos img {
+    display: flex;
+    width: 450px;
+    border: outset 10px #eb64a1;
+    justify-content: center;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: auto;
+}
+
+.titre3 {
+    font-size: 20px;
+    text-align: center;
+    padding: 1%;
+    background-color: #EB64A1;
+    border-radius: 10px 100px / 120px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 52px;
+    margin-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.desc {
+    text-align: center;
+}
+
+img {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+img:hover {
+    transform:scale(1.1);
+}
+
+.activite {
+    padding-top: 51px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.mia {
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    background: #eb64a1;
+    border: solid 2px black;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 130px;
+    height: 39px;
+    border-radius: 5px;
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bouton:hover {
+    transform:scale(1.2);
+    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px);
+}

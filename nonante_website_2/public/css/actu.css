@@ -1,0 +1,80 @@
+body::before {
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-size: cover, cover;
+    background-image: url("anim.png");
+    -webkit-filter: blur(5px);
+     filter: blur(5px); 
+} 
+
+img {
+    max-width: 100%;
+}
+
+.img-canva {
+    display: grid;
+    max-width: 100%;
+    justify-items: center;
+}
+
+.img-canva img {
+    height: 500px;
+    object-fit: contain;
+    margin-bottom: 50px;
+}
+
+
+
+
+h2 {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+.video_container {
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+    width: 67%;
+}
+
+p { text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 3%;
+    padding-top: 25px;
+}
+
+
+h2 { text-align: center; 
+
+}
+
+main {
+    background-color: #8BD0E5;
+    width: 60%;
+    padding-bottom: 100px;
+    margin: auto;
+    padding-top: 1px; }
+
+    button {
+        background-color: white;
+        color: black;
+        border: 2px solid #EB64A1; /* Green */
+        padding: 17px;
+      }
+
+    .btn_festival:hover{
+        border: 2px solid #F7DA5B;
+    }
+
+
